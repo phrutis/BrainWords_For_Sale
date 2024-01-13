@@ -29,7 +29,7 @@ How to search for old lost passphrases:<br>
 Default alphabet: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 .,'!-
 
 -v - verbose output<br>
---bits [4/8/16/20/24]
+--bits 16 or 20 or 24
 --inputAddress addresses.txt - file with addreses<br>
 --inputPhrase dictionary.txt - file with phrases and pass<br>
 -d ? (GPU card number, id)<br>
@@ -75,7 +75,7 @@ sudo apt install -y dos2unix<br>
 dos2unix addresses.txt<br>
 
 Run ```chmod +x BrainWords```<br>
-Run ```./BrainWords-30xx -v --bits 24 --root Test --suffix 0 --inputAddress addresses.txt -d 0```
+Run ```./BrainWords -v --bits 24 --root Test --suffix 0 --inputAddress addresses.txt -d 0```
 
 **Hashcat**
 <br>
@@ -83,16 +83,10 @@ Run ```./hashcat.bin --stdout -a 6 dictionary.txt --increment ?d?d?d?d | ./Brain
 or<br>
 Run ```./hashcat.bin --stdout -a 3 --increment ?u?l?l?l?d?d?d | ./BrainWords -v --inputIn --inputAddress addresses.txt -d 0```<br>
 (If you need more speed, make a copy of the hashcat folder)
-
-Example test<br>
-Passphrase: PaSs'?Z*x<br>
-Address: 1HrWJahBjukPACj7QLUPrr6vNXpYxycREc (Add to addresses.txt)<br>
-Generate your test password here<br>
-
-Run ```BrainWords.exe -v --bits 16 --root PaSs --suffix 0 --inputAddress addresses.txt -d 0```<br>
+<hr>
 
 ### Frequently asked Questions
-<br>
+
 **How to buy the program?**
 <br><br>
 Write @phrutis in telegram.<br>
@@ -109,7 +103,6 @@ After the purchase, I will help with the launch, we will check the performance a
 
 **Why did the program freeze at startup?**
 <br><br>
-She didn't hang up! Program start 3090 --bits25 (25 min.)<br>
 She didn't hang up! Program start 3090 --bits24 (10 min.)<br>
 The program creates tables and downloads to the device<br>
 One card requires 4GB or more of RAM to work.<br>
@@ -280,5 +273,4 @@ After searching, you can install new drivers.<br>
 ```--root``` Fixed part in generation ```--root 1234``` or ```--root " 1234 1234"``` with space<br>
 ```--suffix``` Number o combimnation to start from ```--suffix 0```
 ```-d``` number of the required gpu ```-d 0``` or ```-d 1```
-
-
+<hr>
