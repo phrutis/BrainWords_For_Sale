@@ -74,10 +74,11 @@ sudo apt update<br>
 sudo apt install -y dos2unix<br>
 dos2unix addresses.txt<br>
 
-Run ```chmod +x BrainWords```
+Run ```chmod +x BrainWords```<br>
 Run ```./BrainWords-30xx -v --bits 24 --root Test --suffix 0 --inputAddress addresses.txt -d 0```
 
-Hashcat
+**Hashcat**
+<br>
 Run ```./hashcat.bin --stdout -a 6 dictionary.txt --increment ?d?d?d?d | ./BrainWords -v --inputIn --inputAddress addresses.txt -d 0```<br>
 or<br>
 Run ```./hashcat.bin --stdout -a 3 --increment ?u?l?l?l?d?d?d | ./BrainWords -v --inputIn --inputAddress addresses.txt -d 0```<br>
@@ -91,10 +92,9 @@ Generate your test password here<br>
 Run ```BrainWords.exe -v --bits 16 --root PaSs --suffix 0 --inputAddress addresses.txt -d 0```<br>
 
 ### Frequently asked Questions
-**Question answer:**
 <br>
 **How to buy the program?**
-
+<br><br>
 Write @phrutis in telegram.<br>
 Payment in BTC<br>
 After payment you will receive 2 zip archives
@@ -108,7 +108,7 @@ After the purchase, I will help with the launch, we will check the performance a
 <hr>
 
 **Why did the program freeze at startup?**
-<br>
+<br><br>
 She didn't hang up! Program start 3090 --bits25 (25 min.)<br>
 She didn't hang up! Program start 3090 --bits24 (10 min.)<br>
 The program creates tables and downloads to the device<br>
@@ -117,19 +117,19 @@ The consumption depends on the size of the table (--bits) and the size of the ad
 <hr>
 
 **What address formats can be uploaded?**
-<br>
+<br><br>
 BTC bc.., 3.., 1.., or ETH in a text file from a new line<br>
 It is recommended to use only OLD addresses 1... from $2
-hr>
+<hr>
 
 **How to continue searching after stopping the program?**
-<br>
+<br><br>
 The program saves the position<br>
 You can start from any position by specifying --suffix 1234567
 <hr>
 
 **How to start with 9 characters?**
-<br>
+<br><br>
 Count the number of characters in the alphabet and choose the one you need.<br>
 Example 9 characters (alphabet 64 characters)<br>
 64 * 64 * 64 * 64 * 64 * 64 * 64 * 64 = 281474976710656<br>
@@ -137,7 +137,7 @@ Use --suffix 281474976710656<br>
 <hr>
 
 **How do I search for 9 characters on 50-150 cards?**
-<br>
+<br><br>
 Divide the desired range into parts (into cards)<br>
 18014398509481984 (9) - 281474976710656 (8) = Difference 17732923532771328<br>
 17732923532771328 / 50 (cards) = 354658470655426
@@ -152,7 +152,7 @@ GPU 50 17378265062115902 + 354658470655426 = --suffix 17732923532771328<br>
 
 **Explain what we are looking for?**
 **How it works? What's this?**
-<br>
+<br><br>
 Here is a good example of work for you.<br>
 Enter passphrase: fhqyqzhao123 pay attention to the address 1MVFUmYLKmLyC1m3WfyHkEJTZfoHjwDeXE<br>
 The difference is that instead of requests to the blockchain.<br>
@@ -171,7 +171,7 @@ See hire generstion [https://brainwalletx.github.io](https://brainwalletx.github
 <hr>
 
 **What does Brain Wallet look like?**
-<br>
+<br><br>
 Were there any finds at all?
 <br><br>
 Here is a white list of passwords, phrases, balances, study<br>
@@ -179,35 +179,35 @@ https://privatekeyfinder.io/brainwallet/bitcoin/
 <hr>
 
 **Multigpu program?**
-<br>
+<br><br>
 The program is not multigpu. For each card, indicate your id<br>
 -d 0 or -d 1 ... -d 11<br>
 <hr>
 
 **What does Brain Wallet look like?**
 **Were there any finds at all?**
-
+<br><br>
 Here is a white list of passwords, phrases, balances, study
 https://privatekeyfinder.io/brainwallet/bitcoin/
 <hr>
 
 **Why does the program use a lot of RAM?**
-<br>
+<br><br>
 The program creates the necessary tables and stores them in memory.
 <hr>
 
 **Does the program require an internet connection?**
-<br>
+<br><br>
 No, the program is looking for the key offline.
 <hr>
 
 **The program is sold with source code?**
-<br>
+<br><br>
 Yes, the program is sold with original source code v0.7 and new v0.8 and instructions
 <hr>
 
 **How to change the alphabet in the program?**
-<br>
+<br><br>
 Yes, open the file **Kernel.cuh** insert your alphabet.<br>
 The program only accepts en + numbers and symbols
 
@@ -223,7 +223,7 @@ __device__ __constant__ char _ALPHABET[37] = "0123456789abcdefghijklmnopqrstuvwx
 <hr>
 
 **How to compile a program?**
-<br>
+<br><br>
 ubuntu 20.04 CUDA 11.7 (for RTX 4090 CUDA 12.2)<br>
 Run: ```make```
 
@@ -241,7 +241,7 @@ Windows use VS2019 + install CUDA 11.7 (for RTX 4090 CUDA 12.2)
 <hr>
 
 **How can I make sure that the program does not stop after it finds it?**
-<br>
+<br><br>
 Open the main.cu file using a text editor
 Line 1100 return true; do this //return true; (ETH addresses)
 Line 1124 uncompResult = true; o this //uncompResult = true; (for P2PKH Legacy 1.. Uncompressed)
@@ -251,7 +251,7 @@ Line 1170 compResult = true; o this //compResult = true; (for P2SH addresses 3..
 
 
 **In what modes is the program looking for?**
-<br>
+<br><br>
 She is looking for everyone at once.<br>
 Addresses 1 (uncompressed + compressed), addresses 3... in bc...
 <hr>
@@ -264,7 +264,7 @@ After searching, you can install new drivers.<br>
 <hr>
 
 **What arguments are there in the program?**
-<br>
+<br><br>
 ```-v``` Display the generation position in the program window<br>
 ```-b``` Number of gpu blocks (default set automatically)<br>
 ```-t``` Number of gpu cores (default set automatically)<br>
