@@ -263,4 +263,22 @@ Delete the new driver, install the old driver, the speed will increase x2<br>
 After searching, you can install new drivers.<br>
 <hr>
 
+**What arguments are there in the program?**
+<br>
+```-v``` Display the generation position in the program window<br>
+```-b``` Number of gpu blocks (default set automatically)<br>
+```-t``` Number of gpu cores (default set automatically)<br>
+```--bits``` Number of bits to generate table 8, 16, 20, 24<br>
+```--fstatus``` File name status (default fileStatus.txt)<br>
+```--inputAddress``` List of addresses of BTC or ETH in a tex file from a new line<br>
+```--inputPhrase``` Name of a text file with a list of BTC or ETH addresses starting on a new line<br>
+```--inputIn``` Receive a stream of phrases from an external generator<br>
+```--iteration``` Number of iterations SHA256<br>
+```--eth``` Enable mode ETH (default BTC)<br>
+```--camp2``` Enable search mode for camp2 (keccak*2031) ETH addresses<br>
+```--ethsha256``` sha256 for ETH<br>
+```--root``` Fixed part in generation ```--root 1234``` or ```--root " 1234 1234"``` with space<br>
+```--suffix``` Number o combimnation to start from ```--suffix 0```
+```-d``` number of the required gpu ```-d 0``` or ```-d 1```
+
 
