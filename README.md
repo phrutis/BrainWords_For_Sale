@@ -7,7 +7,7 @@ They were found on a processor with a maximum speed of 100,000 pasdphrases per s
 Speed RTX 4090 = 360,000,000 passphrases/sec. It's 3600 times faster.<br>
 The fact that one 4090 GPU runs in 24 hours is a legendary CPU program in 10 years.<br>
 
-![brainwallet gpu](https://github.com/phrutis/BrainWords_For_Sale/assets/140947743/c87f7a76-4f24-4ebb-803b-541e2111685d)
+![brainwallet gpu](https://github.com/phrutis/BrainWords_For_Sale/assets/140947743/5f2d14ba-9eaf-49ad-a91f-eb20640d1ce9)
 
 **To buy the program, write in telegram** @phrutis
 
