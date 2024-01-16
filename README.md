@@ -235,12 +235,12 @@ Windows use VS2019 + install CUDA 11.7 (for RTX 4090 CUDA 12.2)
 
 **How can I make sure that the program does not stop after it finds it?**
 <br><br>
-Open the main.cu file using a text editor
-Line 1100 return true; do this //return true; (ETH addresses)
-Line 1124 uncompResult = true; o this //uncompResult = true; (for P2PKH Legacy 1.. Uncompressed)
-Line 1140 compResult = true; o this //compResult = true; (for P2PKH Legacy 1.. Compressed)
-Line 1155 bech32Result = true; o this //bech32Result = true; (for bc.. addresses)
-Line 1170 compResult = true; o this //compResult = true; (for P2SH addresses 3..)
+Open the main.cu file using a text editor<br>
+Line 1100 return true; do this //return true; (ETH addresses)<br>
+Line 1124 uncompResult = true; o this //uncompResult = true; (for P2PKH Legacy 1.. Uncompressed)<br>
+Line 1140 compResult = true; o this //compResult = true; (for P2PKH Legacy 1.. Compressed)<br>
+Line 1155 bech32Result = true; o this //bech32Result = true; (for bc.. addresses)<br>
+Line 1170 compResult = true; o this //compResult = true; (for P2SH addresses 3..)<br>
 
 
 **In what modes is the program looking for?**
