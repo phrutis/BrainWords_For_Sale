@@ -240,7 +240,8 @@ Line 1100 return true; do this //return true; (ETH addresses)<br>
 Line 1124 uncompResult = true; o this //uncompResult = true; (for P2PKH Legacy 1.. Uncompressed)<br>
 Line 1140 compResult = true; o this //compResult = true; (for P2PKH Legacy 1.. Compressed)<br>
 Line 1155 bech32Result = true; o this //bech32Result = true; (for bc.. addresses)<br>
-Line 1170 compResult = true; o this //compResult = true; (for P2SH addresses 3..)<br>
+Line 1170 compResult = true; o this //compResult = true; (for P2SH addresses 3..)
+<hr>
 
 
 **In what modes is the program looking for?**
