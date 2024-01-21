@@ -82,6 +82,7 @@ Run ```./BrainWords -v --bits 24 --root Test --suffix 0 --inputAddress addresses
 Run ```./hashcat.bin --stdout -a 6 dictionary.txt --increment ?d?d?d?d | ./BrainWords -v --inputIn --inputAddress addresses.txt -d 0```<br>
 or<br>
 Run ```./hashcat.bin --stdout -a 3 --increment ?u?l?l?l?d?d?d | ./BrainWords -v --inputIn --inputAddress addresses.txt -d 0```<br>
+Low flow rate linux up to 5 Mkeys, Windows up to 10 Mkeys<br>
 (If you need more speed, make a copy of the hashcat folder)
 <hr>
 
