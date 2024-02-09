@@ -5,7 +5,7 @@ Search passphrases on the fastest program in the world<br>
 18,972 passphrases were found, an estimated 5,000 passphrases are lost<br>
 They were found on a processor with a maximum speed of 100,000 pasdphrases per second.<br>
 Speed RTX 4090 = 360,000,000 passphrases/sec. It's 3600 times faster.<br>
-The fact that one 4090 GPU runs in 24 hours is a legendary CPU program in 10 years.<br>
+The fact that one 4090 GPU runs in 24 hours is a legendary CPU program brainflayer in 10 years.<br>
 
 ![brainwallet gpu](https://github.com/phrutis/BrainWords_For_Sale/assets/140947743/5f2d14ba-9eaf-49ad-a91f-eb20640d1ce9)
 
@@ -29,7 +29,7 @@ How to search for old lost passphrases:<br>
 Default alphabet: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 .,'!-
 
 -v - verbose output<br>
---bits 16 or 20 or 24
+--bits 16 or 20 or 24<br>
 --inputAddress addresses.txt - file with addreses<br>
 --inputPhrase dictionary.txt - file with phrases and pass<br>
 -d ? (GPU card number, id)<br>
@@ -46,24 +46,24 @@ Default alphabet: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
 Run: ```BrainWords.exe -v --eth --root "Hello word " --suffix 708550400 --inputAddress addresses-Eth.txt```
 
 
-Prefix + Combinations<br>
+**Prefix + Combinations** <br>
 TestA -> TestB -> TestC -> Testzzzzz -> Testzzzzzzzzzzzzzz<br>
 Run ```BrainWords.exe -v --bits 24 --root Test --suffix 0 --inputAddress addresses.txt -d 0```
 
 Test test A -> Test test B -> Test test C -> Test test zzzzz -> Test test zzzzzzzzzzzzzz<br>
 Run ```BrainWords.exe -v --bits 24 --root "Test test " --suffix 0 --inputAddress addresses.txt -d 0```
 
-Combinations + Suffix (v0.8 only)<br>
+**Combinations + Suffix (v0.8 only)** <br>
 A@gmail.com -> B@gmail.com -> C@gmail.com -> zzzzz@gmail.com -> zzzzzzzzzzzzzz@gmail.com<br>
 Run ```BrainWords.exe -v --bits 24 --rootsuffix @gmail.com --suffix 0 --inputAddress addresses.txt -d 0```
 
 A Test test -> B Test test -> C Test test -> zzzzz Test test -> zzzzzzzzzzzzzz Test test<br>
 Run ```BrainWords.exe -v --bits 24 --rootsuffix " Test test" --suffix 0 --inputAddress addresses.txt -d 0```
 
-Finding passphrases from a text file<br>
+**Finding passphrases from a text file** <br>
 Run ```BrainWords.exe -v --inputPhrase dictionary.txt --inputAddress addresses.txt -d 0```
 
-Hashcat + BrainWords (streaming from an external character generator)<br>
+**Hashcat + BrainWords (streaming from an external character generator)** <br>
 Run ```hashcat.exe --stdout -a 3 --increment ?u?l?l?l?d?d?d | BrainWords.exe -v --inputIn --inputAddress addresses.txt -d 0```
 
 **Linux:**
@@ -231,7 +231,7 @@ Incompatible images hidden<br>
 Launch Type: jupyter<br>
 
 
-Windows use VS2019 + install CUDA 11.7 (for RTX 4090 CUDA 12.2)
+Windows use VS2019 + install CUDA 11.7 (for RTX 4090 CUDA 12.3)
 <hr>
 
 **How can I make sure that the program does not stop after it finds it?**
@@ -243,7 +243,6 @@ Line 1140 compResult = true; o this //compResult = true; (for P2PKH Legacy 1.. C
 Line 1155 bech32Result = true; o this //bech32Result = true; (for bc.. addresses)<br>
 Line 1170 compResult = true; o this //compResult = true; (for P2SH addresses 3..)
 <hr>
-
 
 **In what modes is the program looking for?**
 <br><br>
