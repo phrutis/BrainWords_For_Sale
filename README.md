@@ -91,7 +91,6 @@ Low flow rate linux up to 5 Mkeys, Windows up to 10 Mkeys<br>
 **How to buy the program?**
 <br><br>
 Write @phrutis in telegram.<br>
-Payment in BTC<br>
 After payment you will receive 2 zip archives
 First v0.7<br>
 Second v0.8<br>
