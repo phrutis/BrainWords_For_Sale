@@ -65,6 +65,8 @@ Run ```BrainWords.exe -v --inputPhrase dictionary.txt --inputAddress addresses.t
 
 **Hashcat + BrainWords (streaming from an external character generator)** <br>
 Run ```hashcat.exe --stdout -a 3 --increment ?u?l?l?l?d?d?d | BrainWords.exe -v --inputIn --inputAddress addresses.txt -d 0```
+Or<br>
+Run ```./hashcat -D 2 --stdout -a 3 --increment ?u?l?l?l?d?d?d | ./BrainWords -v --inputIn --inputAddress addresses.txt -d 0```
 
 **Linux:**
 
