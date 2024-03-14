@@ -1,4 +1,4 @@
-# For Sale Private SOFT BrainWords ~$500~ $150 (payment BTC)
+# For Sale Private SOFT BrainWords $500 (payment BTC)
 
 ## Find Lost Bitcoin Passphrases (Brainwallet)
 Search passphrases on the fastest program in the world<br>
@@ -24,6 +24,8 @@ The fact that one 4090 GPU runs in 24 hours is a legendary CPU program brainflay
 | 3060     | 24 | 70 Mkeys/s |
 | 2080 S   | 24 | 70 Mkeys/s |
 | 2070     | 24 | 50 Mkeys/s |
+
+* 1 MKey = 1000000 passwords per sec.
 
 How to search for old lost passphrases:<br>
 Default alphabet: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 .,'!-
@@ -64,9 +66,11 @@ Run ```BrainWords.exe -v --bits 24 --rootsuffix " Test test" --suffix 0 --inputA
 Run ```BrainWords.exe -v --inputPhrase dictionary.txt --inputAddress addresses.txt -d 0```
 
 **Hashcat + BrainWords (streaming from an external character generator)** <br>
-Run ```hashcat.exe --stdout -a 3 --increment ?u?l?l?l?d?d?d | BrainWords.exe -v --inputIn --inputAddress addresses.txt -d 0```
+Run ```hashcat.exe --stdout -a 0 dict.txt dict2.txt | BrainWords.exe -v --bits 8 --inputIn --inputAddress addresses.txt -d 0```
 Or<br>
-Run ```./hashcat -D 2 --stdout -a 3 --increment ?u?l?l?l?d?d?d | ./BrainWords -v --inputIn --inputAddress addresses.txt -d 0```
+Run ```hashcat.exe --stdout -a 0 dict.txt -r use.rule | BrainWords.exe -v --bits 8 --inputIn --inputAddress addresses.txt -d 0```
+Or<br>
+Run ```./hashcat -D 2 --stdout -a 3 -i --increment --increment-min=1 --increment-max=8 ?u?l?l?l?d?d?d?d | ./BrainWords -v --bits 8 --inputIn --inputAddress addresses.txt -d 0```
 
 **Linux:**
 
@@ -81,11 +85,11 @@ Run ```./BrainWords -v --bits 24 --root Test --suffix 0 --inputAddress addresses
 
 **Hashcat**
 <br>
-Run ```./hashcat.bin --stdout -a 6 dictionary.txt --increment ?d?d?d?d | ./BrainWords -v --inputIn --inputAddress addresses.txt -d 0```<br>
+Run ```./hashcat.bin --stdout -a 6 dictionary.txt ?d?d?d?d | ./BrainWords -v --bits 8 --inputIn --inputAddress addresses.txt -d 0```<br>
 or<br>
-Run ```./hashcat.bin --stdout -a 3 --increment ?u?l?l?l?d?d?d | ./BrainWords -v --inputIn --inputAddress addresses.txt -d 0```<br>
+Run ```./hashcat.bin --stdout -a 3 --increment ?u?l?l?l?d?d?d | ./BrainWords -v --bits 8 --inputIn --inputAddress addresses.txt -d 0```<br>
 Low flow rate linux up to 5 Mkeys, Windows up to 10 Mkeys<br>
-(If you need more speed, make a copy of the hashcat folder)
+(If you need more speed, make a copy of the hashcat folder, run )
 <hr>
 
 ### Frequently asked Questions
@@ -93,8 +97,8 @@ Low flow rate linux up to 5 Mkeys, Windows up to 10 Mkeys<br>
 **How to buy the program?**
 <br><br>
 Write @phrutis in telegram.<br>
-After payment you will receive 2 zip archives
-First v0.7<br>
+After BTC payment you will receive 2 zip archives
+First v0.7 (recommend)<br>
 Second v0.8<br>
 The difference in v0.8 is added --rootsuffix<br>
 You can also specify the bit depth for the bloom filter.<br>
