@@ -67,8 +67,10 @@ Run ```BrainWords.exe -v --inputPhrase dictionary.txt --inputAddress addresses.t
 
 **Hashcat + BrainWords (streaming from an external character generator)** <br>
 Run ```hashcat.exe --stdout -a 0 dict.txt dict2.txt | BrainWords.exe -v --bits 8 --inputIn --inputAddress addresses.txt -d 0```
+<br>
 Or<br>
 Run ```hashcat.exe --stdout -a 0 dict.txt -r use.rule | BrainWords.exe -v --bits 8 --inputIn --inputAddress addresses.txt -d 0```
+<br>
 Or<br>
 Run ```./hashcat -D 2 --stdout -a 3 -i --increment --increment-min=1 --increment-max=8 ?u?l?l?l?d?d?d?d | ./BrainWords -v --bits 8 --inputIn --inputAddress addresses.txt -d 0```
 
@@ -85,9 +87,11 @@ Run ```./BrainWords -v --bits 24 --root Test --suffix 0 --inputAddress addresses
 
 **Hashcat**
 <br>
-Run ```./hashcat.bin --stdout -a 6 dictionary.txt ?d?d?d?d | ./BrainWords -v --bits 8 --inputIn --inputAddress addresses.txt -d 0```<br>
+Run ```./hashcat.bin --stdout -a 6 dictionary.txt ?d?d?d?d | ./BrainWords -v --bits 8 --inputIn --inputAddress addresses.txt -d 0```
+<br>
 or<br>
-Run ```./hashcat.bin --stdout -a 3 --increment ?u?l?l?l?d?d?d | ./BrainWords -v --bits 8 --inputIn --inputAddress addresses.txt -d 0```<br>
+Run ```./hashcat.bin --stdout -a 3 --increment ?u?l?l?l?d?d?d | ./BrainWords -v --bits 8 --inputIn --inputAddress addresses.txt -d 0```
+<br>
 Low flow rate linux up to 5 Mkeys, Windows up to 10 Mkeys<br>
 (If you need more speed, make a copy of the hashcat folder, run )
 <hr>
