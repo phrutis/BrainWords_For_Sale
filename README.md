@@ -227,7 +227,7 @@ __device__ __constant__ char _ALPHABET[37] = "0123456789abcdefghijklmnopqrstuvwx
 
 **How to compile a program?**
 <br><br>
-ubuntu 20.04 CUDA 11.7 (for RTX 4090 CUDA 12.2)<br>
+ubuntu 20.04 CUDA 11.7 (for RTX 4090 CUDA 12.4)<br>
 Run: ```make```
 
 vast.ai<br>
@@ -240,17 +240,23 @@ Incompatible images hidden<br>
 Launch Type: jupyter<br>
 
 
-Windows use VS2019 + install CUDA 11.7 (for RTX 4090 CUDA 12.3)
+Windows use VS2019 + install CUDA 11.7 (for RTX 4090 CUDA 12.4)
 <hr>
 
 **How can I make sure that the program does not stop after it finds it?**
 <br><br>
 Open the main.cu file using a text editor<br>
-Line 1100 return true; do this //return true; (ETH addresses)<br>
-Line 1124 uncompResult = true; o this //uncompResult = true; (for P2PKH Legacy 1.. Uncompressed)<br>
-Line 1140 compResult = true; o this //compResult = true; (for P2PKH Legacy 1.. Compressed)<br>
-Line 1155 bech32Result = true; o this //bech32Result = true; (for bc.. addresses)<br>
-Line 1170 compResult = true; o this //compResult = true; (for P2SH addresses 3..)
+Line 1100 <br>
+return true;  -> 
+//return true;<br>
+Line 1124 <br>
+uncompResult = true; -> //uncompResult = true;<br>
+Line 1140 <br>
+compResult = true; -> //compResult = true;<br>
+Line 1155 <br>
+bech32Result = true; -> //bech32Result = true; <br>
+Line 1170 <br>
+compResult = true; -> //compResult = true;
 <hr>
 
 **In what modes is the program looking for?**
