@@ -1,4 +1,4 @@
-# For Sale Private SOFT BrainWords $500 (payment BTC)
+# For Sale Private SOFT BrainWords ~$500~ $200
 
 ## Find Lost Bitcoin Passphrases (Brainwallet)
 Search passphrases on the fastest program in the world<br>
