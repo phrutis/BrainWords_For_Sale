@@ -1,4 +1,4 @@
-# For Sale Private SOFT BrainWords ~$500~ $200
+# For Sale Private SOFT BrainWords ~$500~ $300
 
 ## Find Lost Bitcoin Passphrases (Brainwallet)
 Search passphrases on the fastest program in the world<br>
@@ -287,6 +287,6 @@ After searching, you can install new drivers.<br>
 ```--camp2``` Enable search mode for camp2 (keccak*2031) ETH addresses<br>
 ```--ethsha256``` sha256 for ETH<br>
 ```--root``` Fixed part in generation ```--root 1234``` or ```--root " 1234 1234"``` with space<br>
-```--suffix``` Number o combimnation to start from ```--suffix 0```
-```-d``` number of the required gpu ```-d 0``` or ```-d 1```
+```--suffix``` Number o combimnation to start from ```--suffix 0```<br>
+```-d``` number of the required gpu ```-d 0``` or ```-d 1```<br>
 <hr>
